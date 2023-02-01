@@ -11,8 +11,6 @@ import SegmentedControl from '@react-native-segmented-control/segmented-control'
 import {BreachesListScreenNavigationProp} from '../NavigationTypes';
 import {Breach, Dictionary, Theme} from '../Types';
 import {getBreaches} from '../NetworkManager';
-import {NativeSyntheticEvent} from 'react-native';
-import {NativeSegmentedControlIOSChangeEvent} from '@react-native-segmented-control/segmented-control';
 import store from '../Store';
 import {observer} from 'mobx-react-lite';
 import {getObject} from '../PersistentStorage';
@@ -128,7 +126,6 @@ const styles = StyleSheet.create({
   },
   activityIndicatorBottom: {
     height: 40,
-    // paddingBottom: 30,
   },
 });
 

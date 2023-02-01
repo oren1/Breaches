@@ -1,16 +1,10 @@
 import React, {useEffect, useCallback} from 'react';
 import {View, ScrollView, Text, StyleSheet, useColorScheme} from 'react-native';
-import BreachRow from './BreachRow';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import SegmentedControl from '@react-native-segmented-control/segmented-control';
 import {BreacheDetailsScreenNavigationProp} from '../NavigationTypes';
-import {Breach, Dictionary, Theme} from '../Types';
-import {getBreaches} from '../NetworkManager';
-import {NativeSyntheticEvent} from 'react-native';
-import {NativeSegmentedControlIOSChangeEvent} from '@react-native-segmented-control/segmented-control';
+import {Theme} from '../Types';
 import store from '../Store';
 import {observer} from 'mobx-react-lite';
-import {spread} from 'axios';
 import {storeObject, removeData} from '../PersistentStorage';
 import {useFocusEffect} from '@react-navigation/native';
 /**
