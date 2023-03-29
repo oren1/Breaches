@@ -46,6 +46,7 @@ const BreachDetails = observer(
         </View>
       );
     };
+    
     useFocusEffect(
       useCallback(() => {
         // Do something when the screen is focused

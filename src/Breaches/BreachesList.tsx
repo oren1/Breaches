@@ -105,11 +105,11 @@ const BreachesList = observer(
             }
             onEndReachedThreshold={0}
             getItemLayout={(data, index) => ({
-              length: 75,
-              offset: 75 * index,
+              length: 60,
+              offset: 60 * index,
               index,
             })}
-            maxToRenderPerBatch={20}
+            maxToRenderPerBatch={30}
             onEndReached={() => {
               void executeGetBreaches();
             }}

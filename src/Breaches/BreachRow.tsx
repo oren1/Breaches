@@ -13,6 +13,7 @@ interface BreachRowProps {
 const BreachRow = ({onPress, title, addedDate, logoPath, isDark}: BreachRowProps) => {
   const BreachView = () => {
     const color = isDark ? 'white' : 'black'
+
     return (
       <View>
         <View style={styles.coinRowContainer}>
@@ -24,7 +25,6 @@ const BreachRow = ({onPress, title, addedDate, logoPath, isDark}: BreachRowProps
       </View>
       <View style={[styles.line, {backgroundColor: color, opacity: isDark ? 0.3 : 0.2}]}></View>
       </View>
-
     );
   };
 

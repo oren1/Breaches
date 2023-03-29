@@ -45,7 +45,6 @@ const App = observer( () => {
   }
 
   return (
-    <SafeAreaProvider>
     <NavigationContainer theme={DarkTheme}>
       <Stack.Navigator
         initialRouteName="BreachesList" // sets the 'TopList' to be render first in the navigation
@@ -75,7 +74,6 @@ const App = observer( () => {
         />
       </Stack.Navigator>
     </NavigationContainer>
-   </SafeAreaProvider>
   )
 });
 
